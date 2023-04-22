@@ -10,6 +10,11 @@ function createWindow(): void {
     height: 670,
     show: false,
     backgroundColor: '#17141f',
+    titleBarStyle: 'hiddenInset',
+    trafficLightPosition: {
+      x: 20,
+      y: 20,
+    },
     autoHideMenuBar: true,
     ...(process.platform === 'linux' ? { icon } : {}),
     webPreferences: {
