@@ -2,6 +2,7 @@ import { app, shell, BrowserWindow } from 'electron'
 import { createFileRoute, createURLRoute } from 'electron-router-dom'
 import { join, resolve } from 'node:path'
 import { electronApp, optimizer, is } from '@electron-toolkit/utils'
+import './ipc'
 
 function createWindow(): void {
   // Create the browser window.
